@@ -1,0 +1,44 @@
+.Register
+{
+    margin: auto;
+  width: 90%;
+ 
+  font-size:18px;
+  padding-top: 4px;
+  color: white; 
+  background-color: black;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  
+}
+ .Navbar_Flex:hover
+ {
+      
+    color: red;
+    font-size: 21px;
+
+ }
+ .Navbar_Flex1:hover
+ {
+      
+    color: green;
+    font-size: 21px;
+
+ }.Navbar_Flex2:hover
+ {
+      
+    color: blue;
+    font-size: 21px;
+
+ }.Navbar_Flex3:hover
+ {
+      
+    color: red;
+    border: 1px solid blue;
+     font-size: 20px; 
+     margin-bottom: 10px;
+
+ }

@@ -4,6 +4,10 @@ import { useContext } from 'react'
 import { AppContex } from '../../Context/AppContext'
 import { Icon } from '@chakra-ui/react'
 import { PhoneIcon, AddIcon, WarningIcon ,EmailIcon } from '@chakra-ui/icons'
+import { Navbar } from '../Navbar/Navbar'
+import { NavAllPages } from '../Navbar/NavAllPages'
+import { NavBottom } from '../Navbar/NavBottom'
+import { QuickBuy } from '../Body/QuickBuy'
 
 
 export const Home = () => {
@@ -30,15 +34,7 @@ export const Home = () => {
      }
     return (
       <>
-      <Box> doen : {count}</Box>
-      <Button onClick={handleClick}>Add</Button>
-        <Box ref={finalRef} tabIndex={-1} aria-label='Focus moved to this box'>
-          Some other content that'll receive focus on close.
-        </Box>
-  
-        <Button mt={4} onClick={onOpen}>
-          Add Info
-        </Button>
+     
         <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
@@ -86,7 +82,12 @@ export const Home = () => {
             </ModalFooter>
           </ModalContent>
         </Modal>
+        <Navbar />
+       <NavAllPages />
+       <NavBottom />
+       <QuickBuy />
       </>
+      
     )
   }
       

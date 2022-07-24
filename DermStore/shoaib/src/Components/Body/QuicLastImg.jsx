@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { textStyles } from './QuickBuyBottom'
 import styles from "../Body/Body.module.css"
 import { StarIcon } from '@chakra-ui/icons'
+import { useNavigate } from 'react-router-dom'
 
 // const QuickLast =[{img:"https://static.thcdn.com/images/small/webp/widgets/208-us/43/GHD_676x556-051143.png", title:"Pink Limited Edition Collection" , decp:"Highlitiong awreness year round the collection is delighted  to include a self-check remainder"},
 //                 {img:"https://static.thcdn.com/images/small/webp/widgets/208-us/18/0629-STDCRE-38074-DS-CG-July-Priority-Batch-shot_34-HP_LPSQ_BANNER_676x556-032618.jpg", title:"New from Wander Beauty" ,decp:"Highlitiong awreness year round the collection is delighted  to include a self-check remainder"},
@@ -37,10 +38,11 @@ const QuickData3= [{title:"ReviLash Beautiful RLA Collection (Worth $208)", img:
 
 export const QuicLastImg = () => {
     const [data , setData]= useState([])
+    const navigate= useNavigate()
     const i=5;
      const getData =()=>
      {
-         fetch(" http://localhost:8000/QuickBuyData")
+         fetch(" http://localhost:8080/QuickBuyData")
          .then((res)=>res.json())
          .then((data)=>
          {
@@ -60,7 +62,7 @@ export const QuicLastImg = () => {
           
 {/*           
           
-            <Grid  templateColumns='repeat(3, 1fr)' gap={5} border="1px solid black" w="95%" m="auto" h="470px" mt="15px" bg="white">
+            <Grid  templateColumns='repeat(3, 1fr)' gap={5} border="1px  black" w="95%" m="auto" h="470px" mt="15px" bg="white">
                 {
                     QuickLast.map((elem)=>
                     (
@@ -95,7 +97,7 @@ export const QuicLastImg = () => {
                                 
                                 <TabPanels>
                                     <TabPanel>
-                                    <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px solid black" w="95%" m="auto" h="350px">
+                                    <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px sod black" w="95%" m="auto" h="350px">
                                         {
                                                 QuickData2.map((elem)=>
                                                 (
@@ -122,7 +124,7 @@ export const QuicLastImg = () => {
 
                     {/*    below is panel 2 2 2 2  2 2 2 2 2 2                          */}
                                     <TabPanel>
-                                    <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px solid black" w="95%" m="auto" h="350px">
+                                    <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px  black" w="95%" m="auto" h="350px">
                                         {
                                                 data.map((elem)=>
                                                 (
@@ -155,7 +157,7 @@ export const QuicLastImg = () => {
                                     </TabPanel>
      {/*            beloe pane 3 33 3 3 33 3 3 33 3 3 33 3 3               */}
                                     <TabPanel>
-                                    <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px solid black" w="95%" m="auto" h="350px">
+                                    <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px  black" w="95%" m="auto" h="350px">
                                         {
                                                 QuickData3.map((elem)=>
                                                 (

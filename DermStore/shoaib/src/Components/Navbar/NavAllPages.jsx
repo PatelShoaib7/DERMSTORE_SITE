@@ -1,18 +1,20 @@
-import { ChevronDownIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon, Icon, PhoneIcon } from '@chakra-ui/icons'
 import { Flex, Grid, GridItem, Menu, MenuButton, MenuItem, MenuList, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { BigImage } from '../DivImage/BigImage'
 import { NavBottom } from './NavBottom'
+import styles from "../Navbar/Navbar.module.css"
+
 
 export const NavAllPages = () => {
   return (
-    <div>
+    <div style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" , }}>
        
-  <Flex border="1px solid grey" w="95%" m="auto" gap="35px" h="50px" p="9px">
+  <Flex border="1px  grey" w="95%" m="auto" gap="10px" h="70px" p="9px">
       <Menu p="6px">
-          <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-            Brands
+          <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+            Brands  <ChevronDownIcon w={6} h={5}  />
           </MenuButton>
           <MenuList>
             <MenuItem>Download</MenuItem>
@@ -26,8 +28,8 @@ export const NavAllPages = () => {
 
     {/* <Spacer /> */}
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Summer Shop
+        <MenuButton   className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Summer Shop  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -42,8 +44,8 @@ export const NavAllPages = () => {
 
     {/* <Spacer /> */}
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Browser By
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Browser By  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -54,22 +56,17 @@ export const NavAllPages = () => {
   
 
     {/* <Spacer /> */}
-    <Menu bordr="1px solid black">
-        <MenuButton  bordr="1px solid black" fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          BsetSeller
+    <Menu bordr="1px  black">
+        <MenuButton  className={styles.Navbar_Flex3}  bordr="1px  black" fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          BsetSeller  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
-        <Grid
-                  h='200px'
-                  templateRows='repeat(6, 1fr)'
-                  templateColumns='repeat(1, 1fr)'
-                  gap={4}
-                >
-        <MenuList  bordr="1px solid black">
           
-            <GridItem  > <MenuItem>Download</MenuItem></GridItem>
-            <GridItem  > <MenuItem>Create a Copy</MenuItem></GridItem>
-            <GridItem  >  <MenuItem>Attend a Workshop</MenuItem></GridItem>
-          </Grid>
+        <MenuList  bordr="1px  black">
+          
+            <MenuItem>Download</MenuItem>
+          <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+         
         </MenuList>
        
         
@@ -80,8 +77,8 @@ export const NavAllPages = () => {
 
     {/* <Spacer /> */}
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Skin Care
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Skin Care  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -95,8 +92,8 @@ export const NavAllPages = () => {
 
     {/* <Spacer /> */}
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Make Up
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Make Up  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -108,8 +105,8 @@ export const NavAllPages = () => {
    
    
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Hiar Care
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Hiar Care  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -121,8 +118,8 @@ export const NavAllPages = () => {
 
 
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Bath Body
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Bath Body  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -132,8 +129,8 @@ export const NavAllPages = () => {
         </MenuList>
     </Menu>
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Tool {`&`} Device
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Tool {`&`} Device  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -143,8 +140,8 @@ export const NavAllPages = () => {
         </MenuList>
     </Menu>
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Gifts {`&`}  Sets
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Gifts {`&`}  Sets  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -154,8 +151,8 @@ export const NavAllPages = () => {
         </MenuList>
     </Menu>
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Beauty {`&`}  Fix
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Beauty {`&`}  Fix  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -166,8 +163,8 @@ export const NavAllPages = () => {
     </Menu>
 
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          Offers
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          Offers  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -178,8 +175,8 @@ export const NavAllPages = () => {
     </Menu>
 
     <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-          New
+        <MenuButton  className={styles.Navbar_Flex3} fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px  blue">
+          New  <ChevronDownIcon w={6} h={5}  />
         </MenuButton>
         <MenuList>
           <MenuItem>Download</MenuItem>
@@ -189,17 +186,7 @@ export const NavAllPages = () => {
         </MenuList>
     </Menu>
 
-    <Menu>
-        <MenuButton fontSize="16px"  rightIcon={<ChevronDownIcon />} borderBottom="1px solid blue">
-        Skin On
-        </MenuButton>
-        <MenuList>
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Create a Copy</MenuItem>
-          <MenuItem>Mark as Draft</MenuItem>
-          
-        </MenuList>
-    </Menu>
+   
   </Flex>
 
   

@@ -35,11 +35,11 @@ export const QuickBuyBottom = () => {
   return (
     <div>
 
-        <Grid  templateColumns='repeat(4, 1fr)' gap={4} border="1px solid black" w="95%" m="auto" h="100px" mt="50px" bg="white" >
+        <Grid  templateColumns='repeat(4, 1fr)' gap={4} border="1p solid black" w="95%" m="auto" h="100px" mt="50px" bg="white" >
         {
           texts.map((elem)=>
           (
-            <GridItem p="8px" border='2px solid black' >
+            <GridItem p="8px" border='p solid black' >
                {elem.title}
                 
             </GridItem>
@@ -51,7 +51,7 @@ export const QuickBuyBottom = () => {
         <Img />
 
         <Box >
-          <Flex w="95%" m="auto" border="1px solid green" mt="30px">
+          <Flex w="95%" m="auto" border=" solid green" mt="30px">
              {/* <Spacer />
              <Button> Quick Buy</Button>
              <Spacer />
@@ -85,6 +85,8 @@ export const QuickBuyBottom = () => {
             </Flex>        
                            
         </Box>
+
+        
     </div>
   )
 }

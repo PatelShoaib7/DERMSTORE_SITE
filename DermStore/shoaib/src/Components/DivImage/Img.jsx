@@ -12,7 +12,7 @@ export const Img = () => {
     <div>
       
           
-      <Grid templateColumns='repeat(3, 1fr)' gap={5} border="1px solid black" w="95%" m="auto" h="470px" mt="15px" bg="white">
+      <Grid templateColumns='repeat(3, 1fr)' gap={5} border="1px  black" w="95%" m="auto" h="470px" mt="15px" bg="white">
                 {
                     QuickLast.map((elem)=>
                     (
