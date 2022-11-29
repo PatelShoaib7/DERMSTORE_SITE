@@ -7,9 +7,7 @@ export const  AppContex=createContext()
 
 export const AppContexProvider =({children})=>
 {
-
   const [count , setCount]=useState(0)
-
 
   const handleClick=()=>
   {
