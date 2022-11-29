@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { createContext } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-
-
 export const  AppContex=createContext()
 
 export const AppContexProvider =({children})=>
