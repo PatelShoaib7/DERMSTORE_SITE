@@ -6,19 +6,10 @@ import styles from "./Footer.module.css";
     <div style={{border:'1px  black', margin:'30px'}}>
       <div
         style={{
-          // border: "1px  ",
-          height: "280px",
-          padding: "35px",
-          backgroundColor: "#white",
-        }}
+          // border: "1px  ",height: "280px",  padding: "35px",  backgroundColor: "#white", }}
       >
         <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "75%",
-            margin: "auto",
-          }}
+          style={{  display: "flex",   justifyContent: "space-between",    width: "75%",  margin: "auto", }}
         >
           <div style={{ textDecoration: "start" }} className={styles.RedHover}>
             <a href="">
