@@ -10,7 +10,7 @@ export const AppContexProvider =({children})=>
   const handleClick=()=>
   {
     setCount(()=> count +1)
-    alert("Item Added To Cart Login To Buy Now")
+    alert("Item Added To Cart")
      Navigate("/home/supershop/cart")
   }
   const handleDec=()=>
