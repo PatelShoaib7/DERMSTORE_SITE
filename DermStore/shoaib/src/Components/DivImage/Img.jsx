@@ -11,7 +11,7 @@ export const Img = () => {
   return (
     <div>    
       <Grid templateColumns='repeat(3, 1fr)' gap={5} border="1px  black" w="95%" m="auto" h="470px" mt="15px" bg="white">
-                {
+                { 
                     QuickLast.map((elem)=>
                     (
                       <GridItem>
