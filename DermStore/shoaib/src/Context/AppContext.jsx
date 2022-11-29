@@ -17,9 +17,11 @@ export const AppContexProvider =({children})=>
   {
     setCount(()=> count -1) 
   }
-   return (
+   return
+  (
     <AppContex.Provider value={{count ,handleClick,handleDec }}>
     {children}
    </AppContex.Provider>
    )
 }
+ 
