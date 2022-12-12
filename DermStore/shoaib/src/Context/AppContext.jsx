@@ -4,9 +4,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 export const  AppContex=createContext()
 
 export const AppContexProvider =({children})=>
-{
-  const [count , setCount]=useState(0)
-
+{ const [count , setCount]=useState(0)
   const handleClick=()=>
   {
     setCount(()=> count +1)
@@ -19,7 +17,7 @@ export const AppContexProvider =({children})=>
   }
    return
   (
-    <AppContex.Provider value={{count ,handleClick,handleDec }}>
+        <AppContex.Provider value={{count ,handleClick,handleDec }}>
     {children}
    </AppContex.Provider>
    )
