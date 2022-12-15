@@ -8,18 +8,14 @@ import { Navbar } from '../Navbar/Navbar'
 import { NavAllPages } from '../Navbar/NavAllPages'
 import { NavBottom } from '../Navbar/NavBottom'
 import { QuickBuy } from '../Body/QuickBuy'
-
-
 export const Home = () => {
     const {count , handleClick} =useContext(AppContex)
     const { isOpen, onOpen, onClose } = useDisclosure()
     const finalRef = React.useRef(null)
     const [state , setState] = useState({name:"", email:'', num:''})
     const Info =(e)=>
-    {
-        const { name , value} = e.target
-        setState({...state , [name]:value})
-      
+    {const { name , value} = e.target
+        setState({...state , [name]:value})  
     }
     const arr= JSON.parse(localStorage.getItem("formData"))||[];
      const save =()=>
@@ -38,44 +34,32 @@ export const Home = () => {
  
                     <InputGroup>      
 
-                                      <Input    mb='2rem' type='text'  
-                                                name="name"  placeholder='Enter Name' 
-                                                onChange={Info}
-                                                value={state.name} />
+                                      <Input    mb='2rem' type='text'    name="name"  placeholder='Enter Name' 
+                                                onChange={Info}  value={state.name} />
                      </InputGroup>
-
-
-                         <InputGroup>
-                                <InputLeftElement   pointerEvents='none' children={<EmailIcon color='gray.300' />}/>
-                                          <Input    mb='2rem' type='tel' name="email" 
-                                                    placeholder='Enter email'  
-                                                    onChange={Info} 
-                                                    value={state.email}/>
-                          </InputGroup>
-
-
                           <InputGroup>
-                                  <InputLeftElement pointerEvents='none' children={<PhoneIcon color='gray.300' />}/>
-                                       <Input       mb='2rem' type='tel' name="num" 
-                                                    placeholder='Enter num'  
-                                                    onChange={Info} 
-                                                    value={state.num}/>
-                                 {/* <InputLeftElement  pointerEvents='none' children={<PhoneIcon color='gray.300' />}/> */}
-                          </InputGroup>
+                                <InputLeftElement   pointerEvents='none' children={<EmailIcon color='gray.300' />}/>
+                                          <Input    mb='2rem' type='tel' name="email"   placeholder='Enter email'  
+                                                    onChange={Info}   value={state.email}/>
+                                 </InputGroup>
+                                  <InputGroup>
+                                          <InputLeftElement pointerEvents='none' children={<PhoneIcon color='gray.300' />}/>
+                                               <Input       mb='2rem' type='tel' name="num"    placeholder='Enter num'  
+                                                            onChange={Info}  value={state.num}/>
+                                  </InputGroup>
               
                             </ModalBody>
-
                                         <ModalFooter>
-                                          <Button colorScheme='blue' mr={3} onClick={onClose}>
-                                            Close
-                                          </Button>
-                                          <Button onClick={save}   variant='ghost'>Submit</Button>
+                                                  <Button colorScheme='blue' mr={3} onClick={onClose}>
+                                                        Close
+                                                  </Button>
+                                                   <Button onClick={save}   variant='ghost'>Submit</Button>
                                         </ModalFooter>
                           </ModalContent>
-        </Modal>
+                     </Modal>
         <Navbar />
        <NavAllPages />
-       <NavBottom />
+        <NavBottom />
        <QuickBuy />
       </>
       
