@@ -11,11 +11,10 @@ import { QuickBuyBottom } from './QuickBuyBottom'
 import { textStyles } from './QuickBuyBottom'
 import { QuicLastImg } from './QuicLastImg'
 
-
 export const QuickBuy = () => {
     const [data , setData]= useState([])
   //  const [param ,setParam]= useParams()
- 
+
   const navigate= useNavigate()
    const i=5;
     const getData =()=>
@@ -25,21 +24,19 @@ export const QuickBuy = () => {
         .then((data)=>
         {
             setData(data)
-            console.log(data)
+          
         })
+    }
+       const MoveToCart =(elem,index ,array)=>
+    {  navigate("/home/supershop")
     }
     useEffect(()=>
     {
-        getData()
+      getData()
     },[])
    
-    const MoveToCart =(elem,index ,array)=>
-    {
-      navigate("/home/supershop")
-    }
+ 
   return (
-
-    
     <div style={{padding:'10px', gap:'15px'}}>
       
       <Box p="10px" m="10px" gap="15px">
@@ -50,17 +47,14 @@ export const QuickBuy = () => {
                 (
                      <GridItem key={elem.id} className={styles.shadow} borderRadius={"12px"} p="15px" gap="15px">
                        <Image borderRadius={"12px"} w="92%" h="60%" src={elem.img} m="auto"/>
-                         <Text>   {elem.title} </Text>
-                     
-                       {/* <br /> */}
-                       <Box style={textStyles.h1} >  <>  ₹ {elem.price}</></Box>
-                       
+                         <Text>  Title   {elem.title} </Text>
+                       <Box style={textStyles.h1} >  <> Price  ₹ {elem.price}</></Box>
                      <Box >
+                            <label >Ratings </label>
                         {new Array(5).fill("").map((item, i) => (
 
                             <StarIcon key={index}
-                              color={i > elem.rating ? "blue.200" : "blue.500"}
-                              
+                              color={i > elem.rating ? "blue.200" : "blue.500"}  
                             />
                           ))}
                             {elem.rating}
@@ -75,6 +69,7 @@ export const QuickBuy = () => {
 </Box>
 {/* <Img /> */}
          <QuickBuyBottom />
+             
         <Footer />
            
      
