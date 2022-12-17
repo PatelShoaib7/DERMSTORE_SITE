@@ -4,12 +4,6 @@ import { textStyles } from './QuickBuyBottom'
 import styles from "../Body/Body.module.css"
 import { StarIcon } from '@chakra-ui/icons'
 import { useNavigate } from 'react-router-dom'
-
-// const QuickLast =[{img:"https://static.thcdn.com/images/small/webp/widgets/208-us/43/GHD_676x556-051143.png", title:"Pink Limited Edition Collection" , decp:"Highlitiong awreness year round the collection is delighted  to include a self-check remainder"},
-//                 {img:"https://static.thcdn.com/images/small/webp/widgets/208-us/18/0629-STDCRE-38074-DS-CG-July-Priority-Batch-shot_34-HP_LPSQ_BANNER_676x556-032618.jpg", title:"New from Wander Beauty" ,decp:"Highlitiong awreness year round the collection is delighted  to include a self-check remainder"},
-//                 {img:"https://static.thcdn.com/images/small/webp/widgets/208-us/20/Paula%27s_Choice_676x556_%281%29-052320.png", title:"New from Paula's Choice" , decp:"Highlitiong awreness year round the collection is delighted  to include a self-check remainder"}
-
-// ]
 const QuickData2= [{title:"ReviLash Beautiful RLA Collection (Worth $208)", "img":"https://static.thcdn.com/images/small/webp//productimg/original/13882836-1584968958720605.jpg", "price":"158"},
 
 {title:"ReviLash Beautiful RLA Collection (Worth $208)", img:"https://static.thcdn.com/images/small/webp//productimg/original/13813602-1784968003752682.jpg", price:"369"},
@@ -19,8 +13,6 @@ const QuickData2= [{title:"ReviLash Beautiful RLA Collection (Worth $208)", "img
 {title:"ReviLash Beautiful RLA Collection (Worth $208)", img:"https://static.thcdn.com/images/small/webp//productimg/original/13462860-2144969531274424.jpg", price:"789"},
 
 {title:"ReviLash Beautiful RLA Collection (Worth $208)", img:"https://static.thcdn.com/images/small/webp//productimg/original/13462860-2144969531274424.jpg", price:"369"},
-
-
 ]
 
 const QuickData3= [{title:"ReviLash Beautiful RLA Collection (Worth $208)", img:"https://static.thcdn.com/images/small/webp//productimg/original/13882836-1584968958720605.jpg", price:"158"},
@@ -56,36 +48,6 @@ export const QuicLastImg = () => {
      },[])
   return (
     <div>
-       
-       
-        
-          
-{/*           
-          
-            <Grid  templateColumns='repeat(3, 1fr)' gap={5} border="1px  black" w="95%" m="auto" h="470px" mt="15px" bg="white">
-                {
-                    QuickLast.map((elem)=>
-                    (
-                      <GridItem>
-                                  <Image src={elem.img}/>
-                                  <Box style={textStyles.h1}>{elem.title}</Box>
-                                  <Text>{elem.decp}</Text>
-                      </GridItem>
-                    ))
-                }
-            </Grid> */}
-    
-
-
-
-
-
-
-
-         {/* //for appluyin the tabs */}
-
-                  
-                               
 
                         <Tabs w="95%" m="auto" textAlign="center" justifyContent="center" mb="10px">
                                 <TabList  textAlign="center" justifyContent="center">
@@ -183,7 +145,7 @@ export const QuicLastImg = () => {
                        </Tabs>
 
 
-   
+   //DIV FOR APPENDING THE ALL QUIVK BUY ITEMS 
     </div>
   )
 }
