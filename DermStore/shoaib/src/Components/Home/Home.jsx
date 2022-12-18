@@ -19,7 +19,8 @@ export const Home = () => {
     }
     const arr= JSON.parse(localStorage.getItem("formData"))||[];
      const save =()=>
-     {console.log(state)
+     {
+          console.log(state)
         arr.push(state)
         localStorage.setItem("formData",JSON.stringify(arr))
         alert("form is submitted") 
@@ -31,10 +32,7 @@ export const Home = () => {
             <ModalHeader>Modal Title</ModalHeader>
             <ModalCloseButton />
             <ModalBody >
- 
-                    <InputGroup>      
-
-                                      <Input    mb='2rem' type='text'    name="name"  placeholder='Enter Name' 
+                    <InputGroup>          <Input    mb='2rem' type='text'    name="name"  placeholder='Enter Name' 
                                                 onChange={Info}  value={state.name} />
                      </InputGroup>
                           <InputGroup>
@@ -62,7 +60,6 @@ export const Home = () => {
         <NavBottom />
        <QuickBuy />
       </>
-      
     )
   }
       
