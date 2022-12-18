@@ -23,24 +23,19 @@ export const QuickBuy = () => {
         .then((res)=>res.json())
         .then((data)=>
         {
-            setData(data)
-          
+            setData(data) 
         })
     }
-       const MoveToCart =(elem,index ,array)=>
-    {  navigate("/home/supershop")
-    }
+    const MoveToCart =(elem,index ,array)=>
+    {  navigate("/home/supershop") }
     useEffect(()=>
     {
       getData()
     },[])
-   
- 
   return (
     <div style={{padding:'10px', gap:'15px'}}>
-      
+     
       <Box p="10px" m="10px" gap="15px">
-      
          <Grid templateColumns='repeat(5, 1fr)' gap={4} border="1px solid blck" w="95%" m="auto" h="350px">
             {
                 data.map((elem,index, array)=>
@@ -49,31 +44,20 @@ export const QuickBuy = () => {
                        <Image borderRadius={"12px"} w="92%" h="60%" src={elem.img} m="auto"/>
                          <Text>  Title   {elem.title} </Text>
                        <Box style={textStyles.h1} >  <> Price  ₹ {elem.price}</></Box>
-                     <Box >
-                            <label >Ratings </label>
+                     <Box >  <label >Ratings </label>
                         {new Array(5).fill("").map((item, i) => (
-
-                            <StarIcon key={index}
+                              <StarIcon key={index}
                               color={i > elem.rating ? "blue.200" : "blue.500"}  
                             />
-                          ))}
-                            {elem.rating}
+                          ))} {elem.rating}
                      </Box>
                         <Button bg="black" color="white" onClick={()=> MoveToCart(elem,index,array)}>Quick Buy</Button>
-                        </GridItem>
-                       
-                ))
+                        </GridItem> ))
             }
-
          </Grid>
 </Box>
-{/* <Img /> */}
-         <QuickBuyBottom />
-             
+         <QuickBuyBottom />      
         <Footer />
-           
-     
-    </div>
-   
+    </div>   
   )
 }
