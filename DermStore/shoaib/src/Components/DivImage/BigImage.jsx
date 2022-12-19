@@ -4,13 +4,12 @@ import { QuicLastImg } from '../Body/QuicLastImg'
 import { SuperShop } from '../pages/SuperShop'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-// import Footer from './Components/Footer/Footer';
 export const BigImage = () => {
   return (
     <div>
       <QuicLastImg />
    <div>
+     //HOME SCREEEN CAROSEL FOR SHOWING THE SLIDING EFFECT ON SCREEN OF BIG IMAGES
         <Carousel autoPlay >
                     <div>
                       < img  style={{width:"900px"  }}
@@ -36,7 +35,6 @@ export const BigImage = () => {
                       <img style={{width:"300px" }}
                            src="https://static.thcdn.com/images/medium/webp/widgets/208-us/10/BoD_SCF_Kit_600x600_%283%29-092310.png" />
                     </div>
-          
         </Carousel>
      </div> 
     </div>
