@@ -29,7 +29,7 @@ function App() {
        <Route  path="/home/supershop/cart" element={<Cart />}> </Route>
        <Route  path="/supershop/cart" element={<Cart />}> </Route>
        <Route  path="/:userId" element={<Cart />}> </Route>
-       <Route path="me" element={`...`} />
+      
      </Routes >
   
     </div>
