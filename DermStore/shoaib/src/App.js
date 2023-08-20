@@ -14,6 +14,7 @@ import Footer from './Components/Footer/Footer';
 import { LogIn } from './Components/pages/LogIn';
 import { SuperShop } from './Components/pages/SuperShop';
 
+
 function App() {
   return (
     <div className="App">
